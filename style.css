@@ -2,15 +2,23 @@ body{
     background-color: #151515;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
 .spinner{
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
-.spinner::before,
-.spinner::after{
+.spinner:before,
+.spinner:after{
     content: "";
     position: absolute;
     border-radius: inherit;
@@ -23,7 +31,7 @@ body{
     animation: spin .5s infinite linear;
 }
 
-.spinner::after{
+.spinner:after{
     width: 85%;
     height: 85%;
     background-color: #151515;
